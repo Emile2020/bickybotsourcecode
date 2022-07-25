@@ -38,9 +38,6 @@
     const os = require("os-utils");
     let URL = require('url')
     const ms = require("ms")
-    let {
-        DB
-    } = require("mongquick");
     let canvas = require("discord-canvas")
     let https = require("https")
     const {
@@ -51,8 +48,6 @@
     const dootabase = require("easy-db-json");
     dootabase.setFile("./database.json");
     const synchronizeSlashCommands = require('@frostzzone/discord-sync-commands');
-    const S4D_APP_PKG_Replit_DB = require("@replit/database")
-    const S4D_APP_Replit_DB = new S4D_APP_PKG_Replit_DB()
     let fs = require('fs');
     const devMode = typeof __E_IS_DEV !== "undefined" && __E_IS_DEV;
     const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -372,7 +367,6 @@
         object_formanswer[String('author')] = ((i.member.user).tag)
         dootabase.set(String((String(mathRandomInt(1, 199999999)))), object_formanswer);
         author = (s4d.client.users.cache.get(String('767041966549499925')));
-        S4D_APP_Replit_DB.set((String(mathRandomInt(1, 199999999))), object_formanswer).then(() => {});
         author.send({
             content: String((['```json', '\n', JSON.stringify(object_formanswer), '```'].join('')))
         });
