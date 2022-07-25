@@ -23,6 +23,8 @@
                             "discord.js": "^13.7.0",
                           "discord.js-akinator": "latest",
                           "discord-canvas": "latest",
+                          "jimp": "latest",
+                          "fs": "latest",
 "process":"^0.11.10",
 "easy-json-database": "^1.5.0",
 "discord-logs": "^2.0.1",
