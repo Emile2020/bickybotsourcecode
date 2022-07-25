@@ -32,7 +32,6 @@
 "discord-player": "^5.2.0",
 "play-dl": "^1.4.4",
 "ffmpeg-static": "^4.4.0",
-"@discordjs/opus": "^0.7.0",
 "weird-to-normal-chars":"^1.8.1",
 "noblox.js": "^4.13.1",
 "easy-db-json": "^1.1.1",
